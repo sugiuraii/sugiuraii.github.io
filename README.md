@@ -1,5 +1,7 @@
 # Welcome to sugiuraii.github.io front page.
 
+Japanese version of this document is [here](./README.ja.html)
+
 Currently, following projects are open for development.
 
 ## Websocket automotive gauge project.

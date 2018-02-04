@@ -17,7 +17,7 @@ HTML5(canvas or websocket)を利用したグラフィカルな自動車用外付
 ![接続図](./WebsocketGaugeDiagram.png)
 
 ### とりあえずRaspberry piで試してみる.
-Pre-installed raspbian image is available on [here](https://sugiuraii.github.io/WebSocketGaugeServer/RasobianImageSetup.html).
+Pre-installed raspbian image is available on [here](https://sugiuraii.github.io/WebSocketGaugeServer/RasobianImageSetup.ja.html).
 
 ### メーターをデザインしてみる
 こちらのレポジトリを参照ください。 [WebSocketGaugeClientNeo](https://sugiuraii.github.io/WebSocketGaugeClientNeo/).
