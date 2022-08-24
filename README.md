@@ -4,12 +4,14 @@ Japanese version of this document is [here](./README.ja.html)
 
 Currently, following projects are open for development.
 
-## Websocket automotive gauge project.
-### Introduction
+# Websocket automotive gauge project.
+![Websocket gauge diagram](./car-dashboard_test1.svg)
+
+## Introduction
 The goal of this project is create HTML5(canvas or websocket) based automotive gauge, by broadcasting sensor information (from ECU or sensor control unit) via websocket.
 
 * View your car information (vehicle speed, engine rpm, boost pressure etc..) with pc or smartphone.
-* Gauge viewer is purely HTML5 based. Any OS is OK, if the web browser supports HTML5 and WebGL(or canvas).
+* Gauge viewer is purely HTML5 based. Any OS are OK, if the web browser supports HTML5 and WebGL(or canvas).
 * You can design your own gauge by writing typescript.
 	* Gague viewer application is coded in typescript, with using pixi.js.
 * Server is writtin in C#. The server can run on both Windows and Linux (raspberry pi image is provided below.
@@ -34,6 +36,18 @@ Access gauge viewer reporitory of [WebSocketGaugeClientNeo](https://sugiuraii.gi
 
 #### ELM327 demo (emulated on obdsim)
 <iframe width="640" height="360" src="https://www.youtube.com/embed/l_niGjlkpQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Gallery
+* Analog triple meter
+![AnalogTripleMeter](./TripleAnalogMeter.png)
+* Multi function display (MFD)
+![MFD](./MFDScreenShot.png)
+* Meter and car navigation app, by picture-in-picture
+	* Using Android multiple window separation feature
+![PictureInPicture](./MeterWithPictureInPicture.jpg)
+* Meter and car navigation app,by floating widget
+	* Using [Overlays](https://play.google.com/store/apps/details?id=com.applay.overlay) app
+![Widget](./MeterOverlayWidget.jpg)
 
 ### Related reporitories
 * [WebSocketGaugeServer](https://sugiuraii.github.io/WebSocketGaugeServer/)
