@@ -35,6 +35,18 @@ Pre-installed raspbian image is available on [here](https://sugiuraii.github.io/
 #### ELM327 demo (emulated on obdsim)
 <iframe width="640" height="360" src="https://www.youtube.com/embed/l_niGjlkpQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+## Gallery
+* アナログ3眼メーター
+![AnalogTripleMeter](./TripleAnalogMeter.png)
+* Multi function display (MFD)
+![MFD](./MFDScreenShot.png)
+* メーターとカーナビ(Picture-in-picture)
+	* Using Android multiple window separation feature
+![PictureInPicture](./MeterWithPictureInPicture.jpg)
+* メーターとカーナビ(ウィジェット)
+	* メーターウィジェット化のために [Overlays](https://play.google.com/store/apps/details?id=com.applay.overlay) を使用
+![Widget](./MeterOverlayWidget.jpg)
+
 ### リポジトリへのリンク
 * [WebSocketGaugeServer](https://sugiuraii.github.io/WebSocketGaugeServer/)
 	* Read the sensor information from ECU or control unit (via serial port) and broadcast the information via websocket.
