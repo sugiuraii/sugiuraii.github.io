@@ -2,39 +2,46 @@
 
 Japanese version of this document is [here](./README.ja.html)
 
-Currently, following projects are open for development.
-
 # Websocket automotive gauge project.
 ![Websocket gauge diagram](./car-dashboard_test1.svg)
 
 ## Introduction
-The goal of this project is create HTML5(canvas or websocket) based automotive gauge, by broadcasting sensor information (from ECU or sensor control unit) via websocket.
+* What is this?
+	* This is an application that acquires the car's sensor information (speed, RPM, water temperature, boost, etc.) and displays them as a graphical gauge.
 
-* View your car information (vehicle speed, engine rpm, boost pressure etc..) with pc or smartphone.
-* Gauge viewer is purely HTML5 based. Any OS are OK, if the web browser supports HTML5 and WebGL(or canvas).
-* You can design your own gauge by writing typescript.
-	* Gague viewer application is coded in typescript, with using pixi.js.
-* Server is writtin in C#. The server can run on both Windows and Linux (raspberry pi image is provided below.
+* Features.
+	* This project(program) contains server (collects and distributes sensor information to client) and client (displaying sensor information distributed from the server as a graphical gauge).
+	* Websocket is used for communication between the server and the client, usually using wired LAN or Wifi.
+
+* Features of the client side
+	* The client is a web application, which can run on any OS (PC or smartphone) as long as the browser runs, and does not require installation.
+	* Multiple clients are allowed (multiple smartphones can displlay different gauges).
+	* Graphic display of the client uses WebGL, which is web-based but relatively fast. (Thanks mostly to pixi.js)
+	* It is possible to change the meter design by yourself by tweaking the client's javascript (typescript) source code.
+
+* Features of the server side
+	* The server side is also multi-platform compatible. As long as .net (6.0) + asp.net work and serial port access is available, OS and CPU are (should be) not cared.
+	* Confirmed on Windows+x64, Linux+x64, Linux+ARM; can also run on Raspberry Pi.
 
 ![Websocket gauge diagram](./WebsocketGaugeDiagram.png)
 
-### Try the program on raspberry pi.
-Pre-installed raspbian image is available on [here](https://sugiuraii.github.io/WebSocketGaugeServer/RasobianImageSetup.html).
+## Try it.
+See [Quick start](WebsocketGauge/docs/QuickStart.md)
 
-### Design the gauge
+## Design gauges
 Access gauge viewer reporitory of [WebSocketGaugeClientNeo](https://sugiuraii.github.io/WebSocketGaugeClientNeo/).
 
-### Demonstration movies.
-#### Demonstration on car
+## Demonstration movies.
+### Demonstration on car
 <iframe width="640" height="360" src="https://www.youtube.com/embed/QCOYLCIrU_s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### Demonstration on development PC
+### Demonstration on development PC
 <iframe width="640" height="360" src="https://www.youtube.com/embed/pAk8FpmZctI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### Arduino sensor unit demo.
+### Arduino sensor unit demo.
 <iframe width="640" height="360" src="https://www.youtube.com/embed/HvkB07k6gMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### ELM327 demo (emulated on obdsim)
+### ELM327 demo (emulated on obdsim)
 <iframe width="640" height="360" src="https://www.youtube.com/embed/l_niGjlkpQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Gallery
@@ -49,7 +56,7 @@ Access gauge viewer reporitory of [WebSocketGaugeClientNeo](https://sugiuraii.gi
 	* Using [Overlays](https://play.google.com/store/apps/details?id=com.applay.overlay) app
 ![Widget](./MeterOverlayWidget.jpg)
 
-### Related reporitories
+## Related reporitories
 * [WebSocketGaugeServer](https://sugiuraii.github.io/WebSocketGaugeServer/)
 	* Read the sensor information from ECU or control unit (via serial port) and broadcast the information via websocket.
 * [WebSocketGaugeClientNeo](https://sugiuraii.github.io/WebSocketGaugeClientNeo/)
