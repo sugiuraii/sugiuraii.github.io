@@ -2,7 +2,7 @@
 <!--
 The MIT License
 
-Copyright 2017 kuniaki.
+Copyright 2017 sz2.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -36,6 +36,7 @@ THE SOFTWARE.
         <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
+        <div id="root"></div>
         <div class="jumbotron">
             <h1>
                 Gauge Panel Application Sample
@@ -43,7 +44,7 @@ THE SOFTWARE.
         </div>
         <div class="row">
             <div class="card col-sm-4">
-                <img class="card-img-top img-thumbnail" src="thumbnails/AnalogMeterCluster-Defi-SSM.png" alt="Card image cap">
+                <img class="card-img-top img-thumbnail" src="thumbnails/AnalogMeterCluster.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">
                         Analog Meter Cluster
@@ -51,19 +52,12 @@ THE SOFTWARE.
                     <p class="card-text">
                         Triple analog gauge cluster demonstration (speed+coolant temp, rev+trip and boost).
                     </p>
-                    <p>
-                        <span class="badge badge-info">DefiCOM</span>
-                        <span class="badge badge-info">SSMCOM</span>
-                        <span class="badge badge-info">ELM327COM</span>
-                    </p>
-                    <a href="application/AnalogMeterCluster-SSM.html" class="btn btn-primary btn-lg btn-block">Start(SSM)</a>
-                    <a href="application/AnalogMeterCluster-ELM327.html" class="btn btn-primary btn-lg btn-block">Start(ELM327)</a>
-                    <a href="application/AnalogMeterCluster-Defi-SSM.html" class="btn btn-primary btn-lg btn-block">Start(Defi+SSM)</a>
+                    <a href="application/AnalogMeterCluster.html" class="btn btn-primary btn-lg btn-block">Start</a>
                 </div>
             </div>
 
             <div class="card col-sm-4">
-                <img class="card-img-top img-thumbnail" src="thumbnails/DigitalMFD-Defi-SSM.png" alt="Card image cap">
+                <img class="card-img-top img-thumbnail" src="thumbnails/DigitalMFD.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">
                         Digital MFD
@@ -72,16 +66,12 @@ THE SOFTWARE.
                     <p class="card-text">
                         Multi function display demo with rev, speed, fuel/trip, boost, A/F, coolant temp, battery voltage and throttle.
                     </p>
-                    <p>
-                        <span class="badge badge-info">DefiCOM</span>
-                        <span class="badge badge-info">SSMCOM</span>
-                    </p>
-                    <a href="application/DigitalMFD-SSM.html" class="btn btn-primary btn-lg btn-block">Start(SSM)</a>
-                    <a href="application/DigitalMFD-Defi-SSM.html" class="btn btn-primary btn-lg btn-block">Start(Defi+SSM)</a>
+                    <a href="application/DigitalMFD.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                    <a href="application/ChangeableDigitalMFD.html" class="btn btn-primary btn-lg btn-block">Start(meter selectable)</a>
                 </div>
             </div>
             <div class="card col-sm-4">
-                <img class="card-img-top img-thumbnail" src="thumbnails/CompactMFD-SSM.png" alt="Card image cap">
+                <img class="card-img-top img-thumbnail" src="thumbnails/CompactMFD.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">
                         CompactMFD
@@ -90,12 +80,8 @@ THE SOFTWARE.
                     <p class="card-text">
                         Mini Multi function display demo.
                     </p>
-                    <p class="badge badge-info">SSMCOM</p>
-                    <p class="badge badge-info">ArduinoCOM</p>
-                    <p class="badge badge-info">ELM327COM</p>
-                    <a href="application/CompactMFD-SSM.html" class="btn btn-primary btn-lg btn-block">Start(SSM)</a>
-                    <a href="application/CompactMFD-Arduino.html" class="btn btn-primary btn-lg btn-block">Start(Arduino)</a>
-                    <a href="application/CompactMFD-ELM327.html" class="btn btn-primary btn-lg btn-block">Start(ELM327)</a>
+                    <a href="application/CompactMFD.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                    <a href="application/ChangeableCompactMFD.html" class="btn btn-primary btn-lg btn-block">Start(meter selectable)</a>
                 </div>
             </div>
             <div class="card col-sm-4">
@@ -108,14 +94,8 @@ THE SOFTWARE.
                     <p class="card-text">
                         Triple analog meter.
                     </p>
-                    <p class="badge badge-info">DefiCOM</p>
-                    <p class="badge badge-info">SSMCOM</p>
-                    <p class="badge badge-info">ArduinoCOM</p>
-                    <p class="badge badge-info">ELM327COM</p>
-                    <a href="application/AnalogTripleMeter-SSM.html" class="btn btn-primary btn-lg btn-block">Start(SSM)</a>
-                    <a href="application/AnalogTripleMeter-ELM327.html" class="btn btn-primary btn-lg btn-block">Start(ELM327)</a>
-                    <a href="application/AnalogTripleMeter-Defi.html" class="btn btn-primary btn-lg btn-block">Start(Defi)</a>
-                    <a href="application/AnalogTripleMeter-Arduino.html" class="btn btn-primary btn-lg btn-block">Start(Arduino)</a>
+                    <a href="application/AnalogTripleMeter.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                    <a href="application/ChangeableAnalogTripleMeter.html" class="btn btn-primary btn-lg btn-block">Start(meter selectable)</a>
                 </div>
             </div>
             <div class="card col-sm-4">
@@ -128,12 +108,104 @@ THE SOFTWARE.
                     <p class="card-text">
                         LED rev meter(+ Speed/Trip/Fuel indicator) with 2 analog meters.
                     </p>
-                    <p class="badge badge-info">DefiCOM</p>
-                    <p class="badge badge-info">SSMCOM</p>
-                    <p class="badge badge-info">ELM327COM</p>
-                    <a href="application/LEDRevMeter-SSM.html" class="btn btn-primary btn-lg btn-block">Start(SSM)</a>
-                    <a href="application/LEDRevMeter-ELM327.html" class="btn btn-primary btn-lg btn-block">Start(ELM327)</a>
-                    <a href="application/LEDRevMeter-Defi-SSM.html" class="btn btn-primary btn-lg btn-block">Start(Defi+SSM)</a>
+                    <a href="application/LEDRevMeter.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h1>
+                Gauge Panel Widget Sample
+            </h1>
+        </div>
+        <div class="row">
+            <div class="card col-sm-4">
+                <img class="card-img-top img-thumbnail" src="thumbnails/AnalogMeterClusterWidget.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Analog Meter Cluster widget
+                    </h4>
+                    <p class="card-text">
+                        Triple analog gauge cluster demonstration (speed+coolant temp, rev+trip and boost).
+                    </p>
+                    <a href="application/AnalogMeterClusterWidget.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <img class="card-img-top img-thumbnail" src="thumbnails/AnalogSingleMeterWidget.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Analog single meter widget
+                    </h4>
+
+                    <p class="card-text">
+                        Single analog meter.
+                    </p>
+                    <a href="application/AnalogSingleMeterWidget.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <img class="card-img-top img-thumbnail" src="thumbnails/DigiTachoPanelWidget.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        LED rev meter and speed meter panel.
+                    </h4>
+
+                    <p class="card-text">
+                        LED rev meter and speed meter panel.
+                    </p>
+                    <a href="application/DigiTachoPanelWidget.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <img class="card-img-top img-thumbnail" src="thumbnails/SemiCircularGaugePanelWidget.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Semicircular pie gauge panel widget.
+                    </h4>
+
+                    <p class="card-text">
+                        Semicircular pie gauge panel widget.
+                    </p>
+                    <a href="application/SemiCircularGaugePanelWidget.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <img class="card-img-top img-thumbnail" src="thumbnails/FullCircularGaugePanelWidget.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Fullcircular pie gauge panel widget.
+                    </h4>
+
+                    <p class="card-text">
+                        Fullcircular pie gauge panel widget.
+                    </p>
+                    <a href="application/FullCircularGaugePanelWidget.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <img class="card-img-top img-thumbnail" src="thumbnails/LEDRevMeterWidget.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        LED rev meter
+                    </h4>
+
+                    <p class="card-text">
+                        LED rev meter(+ Speed/Trip/Fuel indicator).
+                    </p>
+                    <a href="application/LEDRevMeterWidget.html" class="btn btn-primary btn-lg btn-block">Start</a>
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <img class="card-img-top img-thumbnail" src="thumbnails/GasMilagePanelWidget.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Gas/Milage panel widget
+                    </h4>
+
+                    <p class="card-text">
+                        Gas milage panel.
+                    </p>
+                    <a href="application/GasMilagePanelWidget.html" class="btn btn-primary btn-lg btn-block">Start</a>
                 </div>
             </div>
         </div>
