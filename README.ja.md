@@ -1,6 +1,8 @@
 # Welcome to sugiuraii.github.io front page.
 
 # Websocket automotive gauge project.
+![Websocket gauge diagram](./car-dashboard_test1.svg)
+
 ## 概要
 * これは何？
 	* 車のセンサ情報（車速・回転数・水温・ブースト等）を取得して、グラフィカルなメーターとして表示するアプリ。
