@@ -33,16 +33,17 @@ Access gauge viewer reporitory of [WebSocketGaugeClientNeo](https://sugiuraii.gi
 
 ## Demonstration movies.
 ### Demonstration on car
-<iframe width="640" height="360" src="https://www.youtube.com/embed/QCOYLCIrU_s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Demonstration on car](https://img.youtube.com/vi/QCOYLCIrU_s/0.jpg)](https://www.youtube.com/embed/QCOYLCIrU_s)
 
 ### Demonstration on development PC
-<iframe width="640" height="360" src="https://www.youtube.com/embed/pAk8FpmZctI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Demonstration on development PC](https://img.youtube.com/vi/pAk8FpmZctI/maxresdefault.jpg)](https://www.youtube.com/embed/pAk8FpmZctI)
 
 ### Arduino sensor unit demo.
-<iframe width="640" height="360" src="https://www.youtube.com/embed/HvkB07k6gMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Arduino sensor unit demo.](https://img.youtube.com/vi/HvkB07k6gMc/maxresdefault.jpg)](https://www.youtube.com/embed/HvkB07k6gMc)
 
 ### ELM327 demo (emulated on obdsim)
-<iframe width="640" height="360" src="https://www.youtube.com/embed/l_niGjlkpQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![ELM327 demo (emulated on obdsim)](https://img.youtube.com/vi/l_niGjlkpQ4/maxresdefault.jpg)](https://www.youtube.com/embed/l_niGjlkpQ4)
+
 
 ## Gallery
 * Analog triple meter
