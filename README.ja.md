@@ -40,8 +40,7 @@
 [![Arduino sensor unit demo.](https://img.youtube.com/vi/HvkB07k6gMc/maxresdefault.jpg)](https://www.youtube.com/embed/HvkB07k6gMc)
 
 ### ELM327 demo (emulated on obdsim)
-[![ELM327 demo (emulated on obdsim)](https://img.youtube.com/vi/l_niGjlkpQ4/maxresdefault.jpg)]
-(https://www.youtube.com/embed/l_niGjlkpQ4)
+[![ELM327 demo (emulated on obdsim)](https://img.youtube.com/vi/l_niGjlkpQ4/maxresdefault.jpg)](https://www.youtube.com/embed/l_niGjlkpQ4)
 
 ## Gallery
 * アナログ3眼メーター
