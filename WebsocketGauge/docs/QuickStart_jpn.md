@@ -18,7 +18,8 @@
       "baudrate": 115200,
       "elm327ProtocolMode": "0",
       "elm327AdaptiveTimingControl": 1,
-      "elm327Timeout" : 50
+      "elm327Timeout" : 50,
+      "elm327HeaderBytes" : ""
 ```
 上記部分のうち
 * `"enabled"`:ELM327+OBDII通信機能を有効化します。
@@ -29,7 +30,8 @@
 * `"baudrate"`:ELM327と通信する際のシリアル速度（ボーレート）を設定します。
 * `"elm327ProtocolMode"` : ELM327-ECU通信プロトコルを設定します。デフォルトは自動(0)ですが、通信できない場合は手動で設定してください。
 * `"elm327AdaptiveTimingControl"`: ELM327-ECU通信時のタイミング設定です。ECUからELM327へデータが転送される際の待ち時間を設定します。標準は1の”adaptive timing control”有効ですが、遅延が大きい場合は2の"aggressive adaptime timing control"を使用したり、0に設定してadaptive timing controlを無効にし、`"elm327Timeout"`で待ち時間を手動設定することが可能です。
-
+* `"elm327HeaderBytes"`: ELM327-ECU通信時のヘッダを設定します(ELM327のAT SHコマンドに対応)。CAN通信時にCANバスに2つ以上のECUが存在する場合、ヘッダに適切なECUのIDを設定することで、通信するECUを限定することが可能です。
+    * 空文字列の場合は無視され、通信前に`AT SH`コマンドは発行されません。
 ## プログラムの起動
 * 展開したディレクトリ内にある`WebSocketServer.exe`(Windows)または`WebSocketServer`(Linux)実行ファイルをエクスプローラまたはターミナル等から起動してください。
 

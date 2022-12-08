@@ -18,7 +18,8 @@
       "baudrate": 115200,
 　    "elm327ProtocolMode": "0",
       "elm327AdaptiveTimingControl": 1,
-      "elm327Timeout" : 50
+      "elm327Timeout" : 50,
+      "elm327HeaderBytes" : ""
 ```
 In the above part.
 * `"enabled"`:Enable ELM327+OBDII communication mode.
@@ -29,8 +30,8 @@ In the above part.
 * `"baudrate"`: Set the serial port speed (baud rate) to communicate with the ELM327.
 * `"elm327ProtocolMode"` : Set the ELM327-ECU communication protocol. The default is automatic (0). If the communication not works well, set it manually.
 * `"elm327AdaptiveTimingControl"`: Sets the wait timing for the ELM327-ECU communication. This can configure the waiting time of ECU->ELM327 data transfer. The standard setting is "adaptive timing control" (1), If there is a large delay, "aggressive adaptime timing control" (2) can be used, or adaptive timing control can be disabled by setting it to 0, and the wait time can be set manually with `"elm327Timeout"`.
-
-Translated with www.DeepL.com/Translator (free version)
+* `"elm327HeaderBytes"`: Sets the header for ELM327-ECU communication (by using ELM327 AT SH command). On CAN commuication, when two or more ECUs exist on the CAN bus, it is possible to limit the ECU to communicate by setting the appropriate ECU ID in the header.
+    * This field is ignored when empty string is set. (In this case, `AT SH` command will not be issued.)
 ## Start the program
 * Run the `WebSocketServer.exe`(Windows) or `WebSocketServer`(Linux) executable file in the extracted directory from Explorer or Terminal.
 
